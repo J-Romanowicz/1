@@ -1,0 +1,87 @@
+
+body {
+background-color:hsl(30, 38%, 92%) ;
+font-family: 'Montserrat', sans-serif;
+height: 100%;
+font-size: 14px;
+}
+.card {
+display: flex;
+width: 600px;
+height: 450px;
+margin: 0 auto;
+background-color: hsl(0, 0%, 100%);
+border-radius: 10px;
+}
+.card-picture{
+width: 100%;
+border-bottom-left-radius: 10px;
+border-top-left-radius: 10px;
+}
+.card-content{
+ color: hsl(228, 12%, 48%);
+ padding: 30px;
+}
+.card-name {
+ text-transform: uppercase; 
+ margin: 0;
+ margin-bottom: 10px;
+ letter-spacing: 5px;
+
+}
+.card-title {
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: hsl(212, 21%, 14%);
+  line-height: 1;
+  margin: 0;
+  margin-bottom: 30px;
+}
+.card-description {
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+.prices{
+margin-bottom: 20px;
+}
+.price {
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1;
+  color: hsl(158, 36%, 37%);
+  margin: 0;
+}
+.old-price {
+  display: inline-block;
+  text-decoration: line-through;
+  margin: 0;
+  margin-left: 20px;
+  vertical-align: top;
+
+}
+.card-button{
+  display: block;
+  width: 200px;
+  margin: 0;
+  text-align: center;
+  padding: 15px;
+background-color:hsl(158, 36%, 37%);
+border-radius: 10px;
+text-decoration: none;
+color: hsl(0, 0%, 100%);
+position: relative;
+}
+.card-button::before{
+content: url(/images/icon-cart.svg);
+background-size: 16px 16px;
+background-repeat: no-repeat;
+margin-right: 5px;
+position: absolute;
+left:20%;
+top:35%;
+}
+.card-button:hover{
+background-color:hsl(159, 40%, 20%) ;
+}
